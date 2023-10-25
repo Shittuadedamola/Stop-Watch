@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+}
+
+#hours{
+    height: 100px;
+    width: 100px;
+    border: 1px solid grey;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+#minutes{
+    height: 100px;
+    width: 100px;
+    border: 1px solid grey;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+#seconds{
+    height: 100px;
+    width: 100px;
+    border: 1px solid grey;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+#butone{
+    background: greenyellow;
+}
+
+#buttwo{
+    
+}

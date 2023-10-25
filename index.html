@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hokees Stop Watch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div id="hours">00</div>
+        <div id="minutes">00</div>
+        <div id="seconds">00</div>
+    </main>
+
+    <button id="butone" onclick="start()">Start</button>
+    <button id="buttwo" onclick="pause()">Stop</button>
+    <button id="butthree" onclick="restart()">Restart</button>
+    
+
+    <script>
+        var seconds = document.getElementById("seconds")
+        var minutes = document.getElementById("minutes")
+        var hours = document.getElementById("hours")
+        var kkk
+
+    will =  function(){
+        seconds.innerHTML = parseInt(seconds.innerHTML) + 1
+
+        if (seconds.innerHTML === '60') {
+            seconds.innerHTML = "0"
+            minutes.innerHTML = parseInt(minutes.innerHTML) + 1
+        }
+
+        else if(minutes.innerHTML ==='60'){
+            minutes.innerHTML = "0"
+            hours.innerHTML = parseInt(hours.innerHTML) + 1
+        }
+
+        else if(hours.innerHTML === "24"){
+            hours.innerHTML = "00"
+            minutes.innerHTML = "00"
+            seconds.innerHTML = "00"
+        }
+    }
+
+    function start(){
+        kkk = setInterval(will, 1000)
+    }
+
+    function pause(){
+        clearInterval(kkk)
+    }
+
+    function restart(){
+        seconds.innerHTML = "00"
+        minutes.innerHTML = "00"
+        hours.innerHTML = "00"
+        clearInterval(kkk)
+    }
+    </script>
+</body>
+</html>
