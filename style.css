@@ -4,41 +4,100 @@
     box-sizing: border-box;
 }
 
-main{
+body{
+    width: 100vw;
+    height: 100vh;
+    background: rgb(114, 114, 255);
+}
+
+#bala{
     display: flex;
+    width: 100%;
+    height: 30%;
+    padding-left: 10%;
+    padding-top: 5%;
 }
 
 #hours{
     height: 100px;
-    width: 100px;
+    width: 30%;
     border: 1px solid grey;
     font-size: 30px;
     text-align: center;
     padding-top: 30px;
+    color: white;
 }
 
 #minutes{
     height: 100px;
-    width: 100px;
+    width: 30%;
     border: 1px solid grey;
     font-size: 30px;
     text-align: center;
     padding-top: 30px;
+    color: white;
 }
 
 #seconds{
     height: 100px;
-    width: 100px;
+    width: 30%;
     border: 1px solid grey;
     font-size: 30px;
     text-align: center;
     padding-top: 30px;
+    color: white;
 }
 
 #butone{
     background: greenyellow;
+    color: white;
+    border: 1px solid grey;
+    padding: 10px;
+    width: 100px;
+    height: 80px;
+    margin-right: 5%;
+    font-weight: bold;
+    font-size: 100%;
 }
 
 #buttwo{
-    
+    background: orange;
+    color: white;
+    border: 1px solid grey;
+    padding: 10px;
+    width: 100px;
+    height: 80px;
+    margin-right: 5%;
+    font-weight: bold;
+    font-size: 100%;
+}
+
+#butthree{
+    background: red;
+    color: white;
+    border: 1px solid grey;
+    padding: 10px;
+    width: 100px;
+    height: 80px;
+    font-weight: bold;
+    font-size: 100%;
+}
+
+section{
+    border: 1px solid blue;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    align-items: center;
+}
+
+#bulu{
+    display: flex;
+    width: 20%;
+    height: 30%;
+    /* padding-left: 37%; */
+    /* margin-left: 40.5%; */
+    padding-top: 5%;
+    margin: auto;
+    /* border: 1px solid blue; */
 }

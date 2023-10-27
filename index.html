@@ -7,15 +7,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
-        <div id="hours">00</div>
-        <div id="minutes">00</div>
-        <div id="seconds">00</div>
-    </main>
-
-    <button id="butone" onclick="start()">Start</button>
-    <button id="buttwo" onclick="pause()">Stop</button>
-    <button id="butthree" onclick="restart()">Restart</button>
+    <section>
+        <main id="bala">
+            <div id="hours">00</div>
+            <div id="minutes">00</div>
+            <div id="seconds">00</div>
+        </main>
+    
+        <main id="bulu">
+            <button id="butone" onclick="start()">Start</button>
+            <button id="buttwo" onclick="pause()">Stop</button>
+            <button id="butthree" onclick="restart()">Restart</button>
+        </main>
+    </section>
     
 
     <script>
@@ -42,6 +46,42 @@
             minutes.innerHTML = "00"
             seconds.innerHTML = "00"
         }
+
+        // if (seconds.innerHTML <= 1) {
+        //     seconds.innerHTML = ''+ seconds.innerHTML
+        // }
+
+        // if (seconds.innerHTML <= 2) {
+        //     seconds.innerHTML = ''+ seconds.innerHTML
+        // }
+
+        // if (seconds.innerHTML <= 3) {
+        //     seconds.innerHTML = ''+ seconds.innerHTML
+        // }
+
+        // if (seconds.innerHTML <= 4) {
+        //     seconds.innerHTML = ''+ seconds.innerHTML
+        // }
+
+        // if (seconds.innerHTML <= 5) {
+        //     seconds.innerHTML = ''+ seconds.innerHTML
+        // }
+
+        // if (seconds.innerHTML <= 6) {
+        //     seconds.innerHTML = ''+ seconds.innerHTML
+        // }
+
+        // if (seconds.innerHTML <= 7) {
+        //     seconds.innerHTML = ''+ seconds.innerHTML
+        // }
+
+        // if (seconds.innerHTML <= 8) {
+        //     seconds.innerHTML = ''+ seconds.innerHTML
+        // }
+
+        // if (seconds.innerHTML <= 9) {
+        //     seconds.innerHTML = '0'+ seconds.innerHTML
+        // }
     }
 
     function start(){
